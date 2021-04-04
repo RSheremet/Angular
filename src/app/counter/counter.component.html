@@ -1,0 +1,10 @@
+<h1>Здесь счетчик</h1>
+<div class="counter-wrapper">
+  <span
+    (click)="plusOneToCounter()"
+    class="counter-wrapper__plus-minus">+</span>
+  <span class="counter-wrapper__value">{{getCounterValue()}}</span>
+  <span
+    (click)="minusOneToCounter()"
+    class="counter-wrapper__plus-minus">-</span>
+</div>

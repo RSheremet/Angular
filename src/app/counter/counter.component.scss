@@ -1,0 +1,17 @@
+.counter-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 700px;
+  width: 100%;
+  &__plus-minus, &__value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__plus-minus {
+    background: #ffa200;
+    border-radius: 15px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
