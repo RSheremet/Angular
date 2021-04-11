@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {CounterComponent} from './counter/counter.component';
+import {EmptyComponent} from './empty/empty.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  {path: '', redirectTo: '/', pathMatch: 'full' },
   {path: 'counter', component: CounterComponent},
+  {path: 'empty', component: EmptyComponent},
 ];
 
 @NgModule({

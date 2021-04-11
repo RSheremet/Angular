@@ -1,8 +1,12 @@
 .counter-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   max-width: 700px;
   width: 100%;
+  margin-top: 20px;
+  &__main-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+  }
   &__plus-minus, &__value {
     display: flex;
     justify-content: center;
@@ -13,5 +17,25 @@
     border-radius: 15px;
     height: 30px;
     cursor: pointer;
+  }
+  .make-zero {
+    background: #ffa200;
+    border-radius: 15px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    margin-top: 10px;
+    outline: none;
+  }
+  &_date {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }

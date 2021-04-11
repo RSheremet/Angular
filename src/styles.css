@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  height: 100%;
+  margin: 0;
+}
+
+@font-face {
+  font-family: RobotoRagular;
+  src: url(assets/fonts/roboto/RobotoCondensed-Regular.ttf) format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'RobotoRagular';
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}

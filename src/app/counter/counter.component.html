@@ -1,10 +1,24 @@
 <h1>Здесь счетчик</h1>
 <div class="counter-wrapper">
-  <span
-    (click)="plusOneToCounter()"
-    class="counter-wrapper__plus-minus">+</span>
-  <span class="counter-wrapper__value">{{getCounterValue()}}</span>
-  <span
-    (click)="minusOneToCounter()"
-    class="counter-wrapper__plus-minus">-</span>
+  <div class="counter-wrapper__main-form">
+    <span
+      (click)="plusOneToCounter()"
+      class="counter-wrapper__plus-minus">+</span>
+      <span class="counter-wrapper__value">
+        {{counterValue | async}}
+      </span>
+      <div *ngIf="counterValueLesserZero$ | async">
+        <span
+          (click)="minusOneToCounter()"
+          class="counter-wrapper__plus-minus">
+          -
+        </span>
+      </div>
+  </div>
+  <button [disabled]="counterValueMoreZero$ | async" (click)="makeZero()" class="make-zero">
+    Зануление
+  </button>
+  <div class="counter-wrapper_date">
+    <span>{{currentDate$ | async}}</span>
+  </div>
 </div>

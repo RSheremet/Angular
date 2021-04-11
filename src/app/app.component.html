@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="container">
-  <h1>{{title}}</h1>
+  <h1 style="cursor: pointer" (click)="showMenu()">{{title}}</h1>
   <nav class="main_navigation">
     <a
       (click)="chooseNav('first')"
@@ -16,3 +16,4 @@
   <router-outlet></router-outlet>
 </div>
 <app-footer></app-footer>
+<app-leftmenu></app-leftmenu>

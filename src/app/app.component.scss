@@ -1,6 +1,7 @@
 .container {
   max-width: 1920px;
   width: 100%;
+  height: calc(100vh - 240px);
   margin: 0 auto;
   display: flex;
   justify-content: flex-start;

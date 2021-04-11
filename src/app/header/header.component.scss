@@ -6,4 +6,36 @@
   align-items: center;
   background: #8989d9;
   border-bottom: 1px solid #c3c3c3;
+  position: relative;
+  &_burger-menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .burger {
+      width: 100%;
+      height: 5px;
+      background: #000;
+      &::before {
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: #000;
+        position: absolute;
+        top: 10px;
+      }
+      &::after {
+        content: '';
+        width: 100%;
+        height: 5px;
+        background: #000;
+        position: absolute;
+        bottom: 10px;
+      }
+    }
+  }
 }

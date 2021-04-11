@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MenuService} from './services/menu.service';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(private menuService: MenuService) {
+  }
   title = 'Главная страница сайта';
   chosenNav = 'first';
   chooseNav(nav): void {
     this.chosenNav = nav;
+  }
+  showMenu(): void {
+    this.menuService.showMenu();
   }
 }
